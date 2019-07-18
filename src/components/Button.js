@@ -5,7 +5,7 @@ export default class Button extends Component {
   static contextType = LanguageContext;
 
   render() {
-    console.log(this.context);
-    return <button className="ui button primary pointer">Submit</button>;
+    const text = this.context === "english" ? "submit" : "Lähetä";
+    return <button className="ui button primary pointer">{text}</button>;
   }
 }
