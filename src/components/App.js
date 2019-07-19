@@ -7,14 +7,14 @@ import LanguageSelector from "./LanguageSelector";
 class App extends React.Component {
   render() {
     return (
-      <div className="ui container">
-        <LanguageStore>
-          <LanguageSelector />
-
-          <ColorContext.Provider value="red">
-            <UserCreate />
-          </ColorContext.Provider>
-        </LanguageStore>
+      <div className="ui container grid">
+        <div className="eigth wide column centered m4">
+          <LanguageStore>
+            <ColorContext.Provider value="primary">
+              <UserCreate />
+            </ColorContext.Provider>
+          </LanguageStore>
+        </div>
       </div>
     );
   }

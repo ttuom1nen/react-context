@@ -8,7 +8,7 @@ export default class LanguageSelector extends Component {
     console.log(this.context);
     return (
       <div>
-        Select a language:
+        <span className="m4">Select a language:</span>
         <i
           className="flag us pointer"
           onClick={() => this.context.onLanguageChange("english")}

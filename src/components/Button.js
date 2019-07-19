@@ -7,7 +7,7 @@ export default class Button extends Component {
     return (
       <ColorContext.Consumer>
         {color => (
-          <button className={`ui button ${color} pointer`}>
+          <button className={`ui button ${color} pointer m4`}>
             <LanguageContext.Consumer>
               {({ language }) => (language === "english" ? "Submit" : "Lähetä")}
             </LanguageContext.Consumer>
